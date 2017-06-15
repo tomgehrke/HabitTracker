@@ -1,9 +1,8 @@
 package com.tomgehrke.habittracker;
 
-import android.content.Context;
 import android.database.Cursor;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -27,7 +26,7 @@ public class TestActivity extends AppCompatActivity {
         selectButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Cursor goodHabits= HabitMethods.getGoodHabits(TestActivity.this);
+                Cursor goodHabits = HabitMethods.getGoodHabits(TestActivity.this);
 
                 TextView outputTextView = (TextView) findViewById(R.id.output_textview);
 
